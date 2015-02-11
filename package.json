@@ -1,0 +1,22 @@
+{
+  "name": "karma-mincer-preprocessor",
+  "version": "0.0.0",
+  "description": "A Karma plugin. Compile things using mincer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cgc/karma-mincer-preprocessor.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cgc/karma-mincer-preprocessor/issues"
+  },
+  "homepage": "https://github.com/cgc/karma-mincer-preprocessor",
+  "dependencies": {
+    "mincer": "^1.2.3"
+  }
+}
