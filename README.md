@@ -37,6 +37,9 @@ module.exports = function(config) {
         // the mincer environment to allow you to set further
         // configuration options or register helpers
         init: function (environment, options) {
+          environment.registerHelper('value-to-be-used', function () {
+            // see https://github.com/nodeca/mincer#using-helpers
+          });
         }
       }
     }
