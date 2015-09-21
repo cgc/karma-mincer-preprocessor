@@ -32,7 +32,12 @@ module.exports = function(config) {
     mincerPreprocessor: {
       options: {
         // paths mincer will use to search for assets in
-        paths: []
+        paths: [],
+        // optionally define a function which will receive
+        // the mincer environment to allow you to set further
+        // configuration options or register helpers
+        init: function (environment, options) {
+        }
       }
     }
   });
