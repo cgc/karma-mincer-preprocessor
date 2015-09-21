@@ -13,6 +13,10 @@ var createMincerPreprocessor = function(args, config, logger, helper) {
   var environment = new Mincer.Environment();
   options.paths.forEach(environment.appendPath, environment);
 
+  if (config.init) {
+    config.init(environment, options);
+  }
+
   return function(content, file, done) {
     var result = null;
     var map;
